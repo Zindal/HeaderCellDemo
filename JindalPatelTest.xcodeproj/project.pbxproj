@@ -15,6 +15,10 @@
 		BB560DB125D6753600B27060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB560DAF25D6753600B27060 /* LaunchScreen.storyboard */; };
 		BB560DBC25D6753700B27060 /* JindalPatelTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DBB25D6753700B27060 /* JindalPatelTestTests.swift */; };
 		BB560DC725D6753700B27060 /* JindalPatelTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DC625D6753700B27060 /* JindalPatelTestUITests.swift */; };
+		BB560DDC25D67FD000B27060 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DDB25D67FD000B27060 /* TableCell.swift */; };
+		BB560DE125D6800900B27060 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DE025D6800900B27060 /* ModelClass.swift */; };
+		BB560DEF25D6900200B27060 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DEE25D6900200B27060 /* HeaderView.swift */; };
+		BB560DF425D6942500B27060 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB560DF325D6942500B27060 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		BB560DC225D6753700B27060 /* JindalPatelTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JindalPatelTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB560DC625D6753700B27060 /* JindalPatelTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JindalPatelTestUITests.swift; sourceTree = "<group>"; };
 		BB560DC825D6753700B27060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB560DDB25D67FD000B27060 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		BB560DE025D6800900B27060 /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		BB560DEE25D6900200B27060 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BB560DF325D6942500B27060 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 		BB560DA325D6753300B27060 /* JindalPatelTest */ = {
 			isa = PBXGroup;
 			children = (
+				BB560DDA25D67FAA00B27060 /* Controller */,
+				BB560DD925D67F9600B27060 /* View */,
+				BB560DD725D67F6C00B27060 /* Model */,
 				BB560DA425D6753300B27060 /* AppDelegate.swift */,
 				BB560DA625D6753300B27060 /* SceneDelegate.swift */,
-				BB560DA825D6753300B27060 /* ViewController.swift */,
 				BB560DAA25D6753300B27060 /* Main.storyboard */,
 				BB560DAD25D6753600B27060 /* Assets.xcassets */,
 				BB560DAF25D6753600B27060 /* LaunchScreen.storyboard */,
@@ -126,6 +136,32 @@
 				BB560DC825D6753700B27060 /* Info.plist */,
 			);
 			path = JindalPatelTestUITests;
+			sourceTree = "<group>";
+		};
+		BB560DD725D67F6C00B27060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB560DE025D6800900B27060 /* ModelClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB560DD925D67F9600B27060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB560DDB25D67FD000B27060 /* TableCell.swift */,
+				BB560DEE25D6900200B27060 /* HeaderView.swift */,
+				BB560DF325D6942500B27060 /* HeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB560DDA25D67FAA00B27060 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB560DA825D6753300B27060 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +270,7 @@
 				BB560DB125D6753600B27060 /* LaunchScreen.storyboard in Resources */,
 				BB560DAE25D6753600B27060 /* Assets.xcassets in Resources */,
 				BB560DAC25D6753300B27060 /* Main.storyboard in Resources */,
+				BB560DF425D6942500B27060 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB560DE125D6800900B27060 /* ModelClass.swift in Sources */,
+				BB560DEF25D6900200B27060 /* HeaderView.swift in Sources */,
 				BB560DA925D6753300B27060 /* ViewController.swift in Sources */,
 				BB560DA525D6753300B27060 /* AppDelegate.swift in Sources */,
+				BB560DDC25D67FD000B27060 /* TableCell.swift in Sources */,
 				BB560DA725D6753300B27060 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
